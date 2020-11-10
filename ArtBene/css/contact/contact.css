@@ -1,0 +1,454 @@
+/*-----CSS Commun à toutes les tailles d'écran----- */
+.bg-header {
+  width: 100%;
+  height: 250px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/images/contact.jpg) no-repeat bottom;
+  background-size: cover;
+  filter: grayscale(25%) opacity(80%);
+  animation: slidein 30s 0.5 alternate linear forwards;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 0 100%;
+  }
+}
+
+#name-p {
+  width: 100%;
+  height: 60px;
+  background-color: #8a803cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#name-p h1 {
+  margin: 10px 0;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  line-height: 1em;
+  padding-top: 7px;
+  user-select: none;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: worker-3d-inline, serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* ~~~~~~~~~~~~~~PREMIER BLOCK : Coordonnées et Horaires + Map~~~~~~~~~~~~~~~ */
+
+#coordoHorrairesEtLocation {
+  display: flex;
+  justify-content: space-around;
+  height: 500px;
+  margin-top: 80px;
+}
+
+/* Les titres */
+
+h2 {
+  font-size: 25px;
+  user-select: none;
+}
+
+body h2:nth-of-type(1) {
+  margin-left: 2%;
+}
+
+body h2:nth-of-type(2) {
+  text-align: center;
+}
+
+/* __partie Coordonées__ */
+
+#coordonnees {
+  width: 100%;
+  height: 100%;
+}
+
+.iconCoordo {
+  display: inline;
+  padding-left: 5%;
+}
+
+.textCoordo {
+  display: inline-block;
+  padding-left: 10%;
+  width: 200px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#adresse {
+  display: flex;
+  align-items: center;
+}
+
+.textCoordoMaisEnTropLong {
+  display: inline-block;
+  padding-left: 10%;
+  width: 400px;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+}
+
+#ligneGriseAside {
+  padding-right: 20px;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+/* __partie Horaire et Map_ */
+
+#horairesEtLocation {
+  width: 100%;
+  height: 500px;
+  text-align: center;
+}
+
+#textOnMap {
+  color: rgb(75, 75, 75);
+  font-family: worker-3d-inline, serif;
+  font-weight: 600;
+}
+
+.parent {
+  position: relative;
+  margin: 0 auto;
+  width: 75%;
+  height: 65%;
+  overflow: hidden;
+  border-right: 2px rgb(32, 32, 32) solid;
+  border-bottom: 2px rgb(32, 32, 32) solid;
+}
+
+#googleMap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* fallback color */
+}
+
+/* ~~~~~~~~~~~~~~~Deuxième Block : Le formulaire Contact~~~~~~~~~~~~~~~~~ */
+section>h1 {
+  font-weight: 1000;
+}
+
+#nousContacter {
+  margin: 100px auto 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: rgb(75, 75, 75);
+}
+
+#conteneur {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 550px;
+  width: 600px;
+  margin: 20px auto 50px;
+}
+
+label {
+  display: block;
+  font-family: worker-3d-inline, serif;
+  padding-left: 12px;
+}
+
+.marge-input {
+  margin: auto;
+  width: 100%;
+}
+
+
+input[type="text"] {
+  padding-left: 20px;
+  padding-right: 20px;
+  border: solid 1px white;
+}
+
+input[type="submit"] {
+  font-family: worker-3d-inline, serif;
+  font-size: 20px;
+  height: 50px;
+  padding-top: 6px;
+  margin-top:20px;
+  width: 33%;
+  border-radius: 20px;
+  background-color: #8a803c;
+  position: static;
+  /*Les Calc() pour que mon bouton réponde bien aux redimensionnements*/
+  margin-left: calc(100% - 35%);
+  color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  animation: submitHover 1s infinite linear;
+}
+
+@keyframes submitHover {
+  0% {
+    padding-top: 3px;
+  }
+
+  10% {
+    padding-top: 9px
+  }
+
+  20% {
+    padding-top: 3px
+  }
+
+  30% {
+    padding-top: 9px
+  }
+
+  50% {
+    padding-top: 6px
+  }
+
+  100% {
+    padding-top: 6px;
+  }
+}
+
+input {
+  display: block;
+  background-color: #e8e7e7;
+  border: none;
+  border-radius: 10px;
+  width: calc(100% - 40px);
+  height: 1.5em;
+  font-size: 1.4em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+textarea:focus,
+input:focus {
+  border: 1px solid black;
+  /*Retirer le focus "carré" initial, pour appliquer une bordure custom plus adaptée*/
+  outline: none;
+}
+
+textarea {
+  width: calc(100% - 40px);
+  /*Padding*/
+  padding: 5px 20px;
+  margin-bottom: 10px;
+  text-align: justify;
+  /*Retirer l'outil de redimensionnement de l'input*/
+  resize: none;
+  background-color: #e8e7e7;
+  border-radius: 20px;
+  height: 6em;
+  font-size: 1.2em;
+  border: solid 1px white;
+  /*choix d'une typo plus lisible, moins design mais plus pratique*/
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::placeholder {
+  color: rgba(49, 49, 49, 0.808);
+}
+
+#CGU-conteneur{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:center;
+  margin-top:-10px;
+}
+input[type="checkbox"]{
+  display:inline;
+  width:30px;
+  padding-left:20px;
+}
+h8{
+  font-size:14px;
+  text-align:center;
+}
+#labelCGU{
+  display:inline;
+  font-size:14px;
+  padding-left:2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [Format Smartphone] */
+
+@media (max-width: 820px) {
+  #contenuContact {
+    width: 360px;
+    margin: 0 auto;
+  }
+
+  /* ~~~~~~~~~~~~~~PREMIER BLOCK : Coordonnées et Horaires + Map~~~~~~~~~~~~~~~~~~ */
+  #coordoHorrairesEtLocation {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 1000px;
+  }
+
+  /* Les titres */
+  body h2:nth-of-type(1) {
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.5em;
+    border-bottom: grey 1px solid;
+  }
+
+  body h2:nth-of-type(2) {
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    line-height: 2.5em;
+    border-bottom: grey 1px solid;
+  }
+
+  /* __partie Coordonées__ */
+  #coordonnees {
+    width: 100%;
+    height: 50%;
+  }
+
+  #ligneGriseAside {
+    padding-right: 0;
+  }
+
+  .parent {
+    width: 95%;
+  }
+
+  /* ~~~~~~~~~~~~~~~Deuxième Block : Le formulaire Contact~~~~~~~~~~~~~~~~~ */
+
+
+  input[type="submit"] {
+    margin: 0;
+    width: 100%;
+    font-family: worker-3d-inline, serif;
+    font-style: normal;
+    font-weight: 800;
+    height: 50px;
+    padding-top: 4px;
+    border-radius: 20px;
+    background-color: #8a803c;
+    color: white;
+  }
+
+  .iconCoordo {
+    padding-left: 15%;
+    font-size: 30px;
+  }
+
+  .textCoordo {
+    padding-left: 8%;
+    font-size: 17px;
+  }
+
+  .textCoordoMaisEnTropLong {
+    padding-left: 8%;
+    font-size: 17px;
+    width: 65%;
+  }
+
+  /* ~~~~~~~~~~~~~~~Deuxième Block : Le formulaire Contact~~~~~~~~~~~~~~~~~ */
+  #conteneur {
+    width: 340px;
+  }
+}
+
+/* [Format Intermédiaire] */
+
+@media (min-width: 821px) and (max-width: 1001px) {
+  #contenuContact {
+    width: 820px;
+    margin: 0 auto;
+  }
+
+  /* ~~~~~~~~~~~~~~PREMIER BLOCK : Coordonnées et Horaires + Map~~~~~~~~~~~~~~~~~~ */
+  #ligneGriseAside {
+    border-right: grey solid 1px;
+    padding-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* [Format PC] */
+
+@media screen and (min-width: 1002px) {
+  #contenuContact {
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  /* ~~~~~~~~~~~~~~~Partie Coordonnées~~~~~~~~~~~~~~~~~ */
+  #ligneGriseTop {
+    border-top: grey solid 1px;
+    width: 45%;
+    margin-left: 5%;
+  }
+
+  #ligneGriseAside {
+    border-right: grey solid 1px;
+  }
+}

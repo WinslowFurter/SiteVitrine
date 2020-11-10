@@ -1,0 +1,210 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: worker-3d-inline, serif;
+}
+
+#main-img {
+    background: url("../../images/images/atelier_ebeniste.png") no-repeat center;
+    background-size: cover;
+    height: 750px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-img > div {
+    height: 40vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-img h1 {
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#products {
+    margin: 100px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+#products article a {
+    text-decoration: none;
+    color: black;
+}
+
+#products article:nth-child(2) {
+    border-radius: 50px;
+    width: 400px;
+    height: 300px;
+    margin: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 0 5px rgba(134, 134, 134, 0.50);
+}
+
+#products article:nth-child(2) h3 {
+    display: flex;
+    margin-top: 20px;
+    color: black;
+    font-size: 30px;
+}
+
+#products article:nth-child(2) div {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#products article:nth-child(2) div > p {
+    display: flex;
+    margin: 10px 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#products article:nth-child(2) a {
+    position: absolute;
+    bottom: -18px;
+    left: calc(50% - 100px);
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    background-color: #BB6125;
+    padding: 5px 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#products article:nth-child(2) a > p {
+    margin: 5px 0 0;
+}
+
+#products article:first-child {
+    background: url("../../images/images/bibliotheque01.jpg") center no-repeat;
+    background-size: contain;
+}
+
+#products article:last-child {
+    background: url("../../images/images/commode01.jpg") center no-repeat;
+    background-size: contain;
+}
+
+#products article:nth-child(odd) {
+    border-radius: 50px;
+    width: 400px;
+    height: 250px;
+    margin: 20px;
+    background-color: white;
+}
+
+#products article:nth-child(odd):hover div {
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.50);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#products article:nth-child(odd) h3 {
+    display: none;
+}
+
+#products article:nth-child(odd):hover h3 {
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+}
+
+#products article:nth-child(odd) p {
+    display: none;
+}
+
+#products article:nth-child(odd):hover p {
+    display: flex;
+    margin: 10px 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+
+#value {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#value i {
+    margin: 20px 15px 0;
+    min-width: 200px;
+    color: #8A803C;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+
+#value i h4 {
+    margin: 15px 0;
+    color: white;
+}
+
+#content {
+    margin: 50px 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: justify;
+}
+
+#content div {
+    margin: 50px;
+}
+
+#content div:first-child {
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 820px) {
+
+    #content {
+        margin: 30px 0;
+    }
+
+    #products article:nth-child(odd) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1337px) {
+    #products article:nth-child(2) {
+        order: 3;
+    }
+}

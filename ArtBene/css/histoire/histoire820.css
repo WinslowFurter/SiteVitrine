@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+}
+
+.bg-header {
+  width: 100%;
+  height: 250px;
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/photo_header/ebeniste.jpg) no-repeat bottom;
+  filter: grayscale(25%) opacity(80%);
+  animation: slidein 30s 0.5 alternate linear;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+#title {
+  width: 100%;
+  height: 60px;
+  background-color: #8a803cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-h img {
+  width: 100%;
+  border-radius: 3px;
+  margin: 0 auto;
+}
+
+#title h1 {
+  font-size: 23px;
+  padding-top: 7px;
+  font-family: worker-3d-inline, serif;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.histoire {
+  margin: 50px 50px;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+
+.histoire h3 {
+  font-family: worker-3d-inline, serif;
+  font-size: 16px;
+  margin: 25px 0;
+}
+
+.paragraphe {
+  margin-top: 30px;
+}
+
+#value {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#value i {
+  margin: 20px 15px 0;
+  min-width: 200px;
+  color: #8a803c;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+#value i h4 {
+  margin: 10px 0;
+  color: white;
+  font-family: worker-3d-inline, serif;
+}
+
+.engagements {
+  width: 330px;
+  font-family: worker-3d-inline, serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 70px auto;
+}
+
+.engagements h1 {
+  font-size: 23px;
+  margin-bottom: 70px;
+  color: black;
+}
+
+.paragraphe {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.paragraphe h3 {
+  font-size: 16px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.paragraphe p {
+  font-size: 14px;
+}

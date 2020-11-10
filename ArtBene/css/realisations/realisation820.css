@@ -1,0 +1,44 @@
+.bg-header {
+    margin: 0;
+    background: url(../../images/images/vegetation.jpg) center;
+}
+
+#title h1 {
+    color: white;
+    font-size: 23px;
+}
+
+.products {
+    margin: 0;
+    padding: 0 50px 20px 50px;
+}
+
+.products h3 {
+    text-align: center;
+}
+
+.products img {
+    width: 300px !important;
+}
+
+.products article {
+    margin: 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+    align-items: center;
+}
+
+.products p {
+    text-align: center;
+    width: 95%;
+    margin: 0 10px;
+}
+
+span[id*="readmore"] {
+    display: none;
+}
+
+p i {
+    color: #8a803cc7;
+}

@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-header {
+  width: 100%;
+  height: 250px;
+  margin: 70px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/photo_header/restauration-de-meubles-header.jpg)
+    no-repeat bottom;
+  filter: grayscale(25%) opacity(80%);
+  animation: slidein 30s 0.5 alternate linear;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+#title {
+  width: 100%;
+  height: 60px;
+  background-color: #8a803cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title h1 {
+  font-size: 25px;
+  padding-top: 7px;
+  font-family: worker-3d-inline, serif;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+#img-h img {
+  width: 90%;
+  border-radius: 3px;
+  margin-right: 50px;
+}
+
+.histoire {
+  margin: 100px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.paragraphe {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 50%;
+}
+
+.histoire p {
+  text-align: justify;
+  margin-top: 40px;
+}
+
+.histoire h3 {
+  font-family: worker-3d-inline, serif;
+}
+
+.engagements {
+  font-family: worker-3d-inline, serif;
+  text-align: center;
+  margin: 70px 0;
+}
+
+.engagements h1 {
+  margin-bottom: 70px;
+}
+
+.paragraphe {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  text-align: justify;
+}
+
+.paragraphe h3 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+#value {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#value i {
+  margin: 20px 15px 0;
+  min-width: 200px;
+  color: #8A803C;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+#value i h4 {
+  margin: 10px 0;
+  color: white;
+  font-family: worker-3d-inline, serif;
+}

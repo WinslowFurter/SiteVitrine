@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bandeau */
+
+#title {
+  width: 100%;
+  height: 60px;
+  background-color: #8a803cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#title h1 {
+  font-size: 25px;
+  padding-top: 7px;
+  font-family: worker-3d-inline, serif;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+}
+
+.bg-header {
+  width: 100%;
+  height: 250px;
+  margin: 70px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/photo_header/restauration-de-meubles-header.jpg)
+    no-repeat bottom;
+  filter: grayscale(25%) opacity(80%);
+  animation: slidein 30s 0.5 alternate linear;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+/* Production */
+
+.products img {
+  width: 500px;
+}
+
+.products img:hover {
+  transform: scale(1.01);
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  margin: 100px auto;
+  padding: 50px;
+}
+
+.products a {
+  text-decoration: none;
+  color: black;
+}
+
+.products article {
+  margin: 0 100px 200px;
+  padding-bottom: 15px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #8a803c6b;
+}
+
+.products article:nth-child(odd) {
+  display: flex;
+  justify-content: space-around;
+}
+
+.products article:nth-child(even) {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+}
+
+.products p {
+  width: 300px;
+  text-align: justify;
+  font-family: worker-3d-inline, serif;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.products div h3 {
+  font-family: worker-3d-inline, serif;
+  color: #bb6125;
+}
+
+.products article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

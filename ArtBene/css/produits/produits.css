@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Bandeau*/
+.bg-header {
+  width: 100%;
+  height: 250px;
+  margin: 70px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../../images/photo_header/ebeniste.jpg) no-repeat bottom;
+  background-size: cover;
+  filter: grayscale(25%) opacity(80%);
+  animation: slidein 30s 0.5 alternate linear;
+}
+
+@keyframes slidein {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+.name-p {
+  width: 100%;
+  height: 60px;
+  background-color: #8a803cc0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: Worker-3d-inline, serif;
+  font-size: 25px;
+  padding-top: 7px;
+}
+
+/*__*/
+
+/*Production*/
+
+.product {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  width: 35%;
+}
+
+.container {
+  margin: 50px 15vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inspi {
+  margin-bottom: 50px;
+}
+
+p {
+  margin-top: 15px;
+}
+
+/*__*/
+
+/*Responsive*/
+
+@media (max-width: 820px) {
+  .product img {
+    width: 75vw;
+  }
+
+  h1 {
+    font-family: Worker-3d-inline, serif;
+    font-size: 16px;
+    color: white;
+  }
+
+  .bg-header {
+    margin: 0;
+    width: 100%;
+    background: url(../../images/images/vegetation.jpg) center;
+  }
+}
+
+/*__*/

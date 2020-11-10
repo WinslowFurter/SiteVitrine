@@ -1,0 +1,113 @@
+header h1, h2, p, a, li {
+    font-family: worker-3d-inline, serif;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header div img:last-child {
+    display: none;
+}
+
+header #logo {
+    background: url("../images/logo/blanc-bg-black.png") no-repeat center;
+    background-size: contain;
+    width: 300px;
+    height: 70px;
+}
+
+#menu > i {
+    display: none;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+#navbar div {
+    display: flex;
+    align-items: center;
+}
+
+#navbar div a {
+    text-decoration: none;
+    color: white;
+}
+
+#lang-select-dropdown {
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+#lang-select-dropdown i {
+    position: absolute;
+    top: 10px;
+    color: white;
+    float: top;
+}
+
+#lang-select-dropdown > #lang-select {
+    display: none;
+    z-index: 1;
+    flex-direction: column;
+}
+
+/*
+    added when click is triggered on dropdown
+*/
+.dropdown {
+    display: flex !important;
+    position: absolute;
+    top: 25px;
+    padding: 0.2em;
+    border-radius: 2px;
+    z-index: 5;
+}
+
+#lang-select-dropdown > #lang-select a {
+    color: white;
+}
+
+#bars {
+    display: none !important;
+}
+
+nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 30px;
+}
+
+nav div ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav div ul li {
+    font-size: 1vw;
+    list-style: none;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+nav div ul li a {
+    animation: 0.3s;
+}
+
+nav div ul li:hover a {
+    border-bottom: 1px solid white;
+}
